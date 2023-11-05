@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">jam berapa sekarang</button>
+    <p id="demo">demo</p>
+
+    <button onclick="this.innerHTML=Date()">jam berapa sekarang</button>
+
+    <select name="" id="hobi" onchange="myfunctionHobi()">
+      <option value="hobi lari">lari</option>
+      <option value="hobi berenang">berenang</option>
+    </select>
+    <p id="texthobi">hasil hobi</p>
+  </body>
+</html>
+<script>
+  function myfunctionHobi() {
+    var x = document.getElementById('hobi').value;
+    document.getElementById('texthobi').innerHTML = 'anda memilih ' + x;
+  }
+</script>
